@@ -100,6 +100,8 @@
             color: #a0aab3; /* Slightly darker text color for contrast */
             width: 48%; /* Take up less space to accommodate the new right section */
             box-sizing: border-box; /* Include padding in the width */
+            height: auto;
+            min-height: 150px; /* Ensure a minimum height to match the right box */
         }
 
         .about-box p {
@@ -121,7 +123,7 @@
 
         .right-box {
             width: 48%; /* Match the width of the about-box */
-            height: auto; /* Let the content dictate the height */
+            min-height: 150px; /* Set the same minimum height as the about-box */
             background-color: #161b22; /* Darker background for the right section */
             border-radius: 10px; /* Rounded corners */
             padding: 15px; /* Padding inside the box */
