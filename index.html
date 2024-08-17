@@ -80,7 +80,7 @@
         .container {
             display: flex;
             justify-content: space-between; /* Space between left and right sections */
-            align-items: flex-start;
+            align-items: stretch; /* Ensure both boxes stretch to the same height */
             width: 100%; /* Full width by default */
             max-width: 800px; /* Set a maximum width */
             margin: 20px auto; /* Center horizontally and add some vertical margin */
@@ -92,19 +92,17 @@
             padding: 20px; /* Increase padding for better spacing */
         }
 
-        .about-box {
-            background-color: #161b22; /* Darker background for the "About me" section */
+        .about-box, .right-box {
+            background-color: #161b22; /* Darker background for the sections */
             border-radius: 10px; /* Rounded corners */
             padding: 15px; /* Padding inside the box */
             border: 1px solid #30363d; /* Border to match the theme */
             color: #a0aab3; /* Slightly darker text color for contrast */
-            width: 48%; /* Take up less space to accommodate the new right section */
+            width: 48%; /* Each box takes up less space */
             box-sizing: border-box; /* Include padding in the width */
-            height: auto;
-            min-height: 150px; /* Ensure a minimum height to match the right box */
         }
 
-        .about-box p {
+        .about-box p, .right-box p {
             font-size: 1.2em; /* Slightly larger font size */
             font-weight: bold; /* Make it bold */
             margin-bottom: 10px; /* Add space below the "About me" title */
@@ -122,14 +120,6 @@
         }
 
         .right-box {
-            width: 48%; /* Match the width of the about-box */
-            min-height: 150px; /* Set the same minimum height as the about-box */
-            background-color: #161b22; /* Darker background for the right section */
-            border-radius: 10px; /* Rounded corners */
-            padding: 15px; /* Padding inside the box */
-            border: 1px solid #30363d; /* Border to match the theme */
-            color: #c9d1d9; /* Slightly lighter text color for contrast */
-            box-sizing: border-box; /* Include padding in the width */
             display: flex;
             flex-direction: column;
             justify-content: flex-start; /* Align content at the start */
