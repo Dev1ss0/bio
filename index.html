@@ -19,12 +19,12 @@
             height: 100vh;
         }
         .search-bar-container {
-            width: 50%;
+            width: 70%;
             margin-top: 1em;
             margin-bottom: 1em;
             display: flex;
-            justify-content: center;
             align-items: center;
+            justify-content: flex-start;
         }
         .search-bar {
             flex-grow: 1;
@@ -41,7 +41,7 @@
         .social-buttons {
             display: flex;
             gap: 0.5em;
-            margin-left: 0.5em;
+            margin-left: 1em; /* Space between search bar and buttons */
         }
         .social-buttons a {
             text-decoration: none;
@@ -67,9 +67,10 @@
         .container {
             display: flex;
             align-items: flex-start;
-            width: 60%; /* Smaller container width */
-            max-width: 600px; /* Set a maximum width */
+            width: 80%; /* Reverted to previous size */
+            max-width: 800px; /* Set a maximum width */
             margin-top: 20px;
+            justify-content: flex-start; /* Align to the left */
         }
         .left {
             flex: 1;
@@ -99,10 +100,10 @@
             <input type="text" placeholder="Search...">
         </div>
         <div class="social-buttons">
-            <a href="https://youtube.com" target="_blank">
+            <a href="https://www.youtube.com/c/Dev1ss0" target="_blank" title="Visit Dev1ss0's YouTube Channel">
                 <i class="fab fa-youtube"></i>
             </a>
-            <a href="https://instagram.com" target="_blank">
+            <a href="https://instagram.com" target="_blank" title="Visit Instagram Profile">
                 <i class="fab fa-instagram"></i>
             </a>
         </div>
