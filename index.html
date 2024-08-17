@@ -8,102 +8,115 @@
         @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css');
 
         body {
-            background-color: #0d1117; /* GitHub's dark gray background color */
-            color: #c9d1d9; /* GitHub's light gray text color */
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            height: 100vh;
-            position: relative; /* Ensure that absolutely positioned children are relative to the body */
-        }
-        .search-bar-container {
-            width: 70%;
-            margin-top: 1em;
-            margin-bottom: 1em;
-            display: flex;
-            align-items: center;
-            justify-content: flex-start;
-        }
-        .search-bar {
-            flex-grow: 1;
-        }
-        .search-bar input {
-            width: 100%;
-            padding: 10px;
-            font-size: 1em;
-            border: 1px solid #30363d;
-            border-radius: 6px;
-            background-color: #161b22;
-            color: #c9d1d9;
-        }
-        .social-buttons {
-            display: flex;
-            gap: 0.5em;
-            margin-left: 1em; /* Space between search bar and buttons */
-        }
-        .social-buttons a {
-            text-decoration: none;
-            font-size: 1.5em;
-            color: #c9d1d9;
-            background-color: #161b22;
-            border: 1px solid #30363d;
-            padding: 8px;
-            border-radius: 6px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-        .social-buttons a.youtube-button {
-            margin-left: 1em; /* Same space as Instagram button */
-        }
-        .social-buttons a:hover {
-            background-color: #30363d;
-        }
-        h1 {
-            font-size: 3em;
-            margin: 0.5em 0;
-            text-align: center;
-            width: 100%;
-        }
-        .container {
-            display: flex;
-            align-items: flex-start;
-            width: 220vw; /* Full viewport width */
-            height: auto; /* Adjust height based on content */
-            position: absolute; /* Position the container absolutely */
-            left: 0; /* Align to the left edge */
-            top: 45%; /* Move down a little above the vertical center */
-            transform: translateY(-50%); /* Center vertically relative to its own height */
-            box-sizing: border-box; /* Include padding and border in the element's total width and height */
-            background-color: #161b22; /* Darker background color for the container */
-            padding: 10px; /* Add some padding */
-        }
-        .left {
-            flex: 1;
-            font-size: 1.2em; /* Smaller font size */
-            text-align: left;
-            border: 1px solid #30363d; /* Thin box around the "About me" section */
-            padding: 10px;
-            border-radius: 6px;
-            color: #a0aab3; /* Slightly darker and less bright text color */
-            background-color: #0d1117; /* Darker background for the "About me" section */
-            box-sizing: border-box; /* Include padding and border in the element's total width */
-        }
-        .right {
-            flex: 2;
-            text-align: center;
-        }
-        ul {
-            list-style-type: none;
-            padding-left: 0;
-            font-size: 1em; /* Smaller font size for list items */
-        }
-        li {
-            margin-bottom: 0.5em;
-        }
+    background-color: #0d1117; /* GitHub's dark gray background color */
+    color: #c9d1d9; /* GitHub's light gray text color */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    position: relative; /* Ensure that absolutely positioned children are relative to the body */
+}
+
+.search-bar-container {
+    width: 70%;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.search-bar {
+    flex-grow: 1;
+}
+
+.search-bar input {
+    width: 100%;
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #30363d;
+    border-radius: 6px;
+    background-color: #161b22;
+    color: #c9d1d9;
+}
+
+.social-buttons {
+    display: flex;
+    gap: 0.5em;
+    margin-left: 1em; /* Space between search bar and buttons */
+}
+
+.social-buttons a {
+    text-decoration: none;
+    font-size: 1.5em;
+    color: #c9d1d9;
+    background-color: #161b22;
+    border: 1px solid #30363d;
+    padding: 8px;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-buttons a.youtube-button {
+    margin-left: 1em; /* Same space as Instagram button */
+}
+
+.social-buttons a:hover {
+    background-color: #30363d;
+}
+
+h1 {
+    font-size: 3em;
+    margin: 0.5em 0;
+    text-align: center;
+    width: 100%;
+}
+
+.container {
+    display: flex;
+    align-items: flex-start;
+    width: 100%; /* Full width by default */
+    max-width: 800px; /* Set a maximum width */
+    margin: 20px auto; /* Center horizontally and add some vertical margin */
+    position: relative; /* Position relative to body */
+    top: 45%; /* Move down a little above the vertical center */
+    transform: translateY(-50%); /* Center vertically relative to its own height */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    background-color: #161b22; /* Darker background color for the container */
+    padding: 10px; /* Add some padding */
+}
+
+.left {
+    flex: 1;
+    font-size: 1.2em; /* Smaller font size */
+    text-align: left;
+    border: 1px solid #30363d; /* Thin box around the "About me" section */
+    padding: 10px;
+    border-radius: 6px;
+    color: #a0aab3; /* Slightly darker and less bright text color */
+    background-color: #0d1117; /* Darker background for the "About me" section */
+    box-sizing: border-box; /* Include padding and border in the element's total width */
+}
+
+.right {
+    flex: 2;
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+    font-size: 1em; /* Smaller font size for list items */
+}
+
+li {
+    margin-bottom: 0.5em;
+}
     </style>
 </head>
 <body>
