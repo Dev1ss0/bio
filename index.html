@@ -15,23 +15,50 @@
             justify-content: center;
             align-items: center;
             height: 100vh;
-            text-align: center;
         }
         h1 {
             font-size: 3em;
             margin: 0.5em 0;
+            text-align: center;
+            width: 100%;
         }
-        p {
+        .container {
+            display: flex;
+            align-items: flex-start;
+            width: 80%;
+        }
+        .left {
+            flex: 1;
             font-size: 1.5em;
-            margin: 0.5em 0;
+            text-align: left;
+        }
+        .right {
+            flex: 2;
+            text-align: center;
+        }
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+            font-size: 1.2em;
+        }
+        li {
+            margin-bottom: 0.5em;
         }
     </style>
 </head>
 <body>
-    <div>
-        <h1>Welcome to My GitHub-Themed Website</h1>
-        <p>This is a simple website with a GitHub-style background.</p>
+    <div class="container">
+        <div class="left">
+            <p>About me:</p>
+            <ul>
+                <li>Age: 18</li>
+                <li>Timezone: CET</li>
+                <li>Discord: Dev1ss0</li>
+            </ul>
+        </div>
+        <div class="right">
+            <h1>Welcome to my Bio!</h1>
+        </div>
     </div>
 </body>
 </html>
-
