@@ -17,6 +17,7 @@
             flex-direction: column;
             align-items: center;
             height: 100vh;
+            position: relative; /* Ensure that absolutely positioned children are relative to the body */
         }
         .search-bar-container {
             width: 70%;
@@ -73,9 +74,9 @@
             width: 60%; /* Adjusted size */
             max-width: 700px; /* Set a maximum width */
             margin-top: 20px;
-            margin-left: -5%; /* Push the container further to the left */
-            justify-content: flex-start; /* Align to the left */
-            position: relative; /* Ensure it stays in place */
+            position: absolute; /* Position the container absolutely */
+            left: 0; /* Align to the far left */
+            top: 100px; /* Adjust the top position if necessary */
         }
         .left {
             flex: 1;
