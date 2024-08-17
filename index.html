@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dev1ss0's Bio</title>
+    <title>My GitHub-Themed Website</title>
     <style>
         @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css');
 
@@ -71,13 +71,14 @@
         .container {
             display: flex;
             align-items: flex-start;
-            width: 60%; /* Adjusted size */
-            max-width: 700px; /* Set a maximum width */
+            width: 100%; /* Fill the entire screen width */
+            max-width: 100%; /* Ensure it doesn't exceed the viewport width */
             margin-top: 20px;
             position: absolute; /* Position the container absolutely */
-            left: 30%; /* Move the container further to the left */
+            left: 0; /* Align to the left edge */
             top: 45%; /* Move down a little above the vertical center */
             transform: translateY(-50%); /* Center vertically relative to its own height */
+            box-sizing: border-box; /* Include padding and border in the element's total width and height */
         }
         .left {
             flex: 1;
@@ -87,6 +88,7 @@
             padding: 10px;
             border-radius: 6px;
             color: #a0aab3; /* Slightly darker and less bright text color */
+            box-sizing: border-box; /* Include padding and border in the element's total width */
         }
         .right {
             flex: 2;
