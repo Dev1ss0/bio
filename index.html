@@ -120,7 +120,8 @@
         }
 
         .right-box {
-            width: 48%; /* Take up less space to match the about-box */
+            width: 48%; /* Match the width of the about-box */
+            height: auto; /* Let the content dictate the height */
             background-color: #161b22; /* Darker background for the right section */
             border-radius: 10px; /* Rounded corners */
             padding: 15px; /* Padding inside the box */
@@ -129,7 +130,7 @@
             box-sizing: border-box; /* Include padding in the width */
             display: flex;
             flex-direction: column;
-            justify-content: center; /* Center content vertically */
+            justify-content: flex-start; /* Align content at the start */
         }
 
         .right-box p {
@@ -165,7 +166,6 @@
             </ul>
         </div>
         <div class="right-box">
-            <p>HC S4 - 31.10.21 / 29.02.24</p>
             <p>HC S5 - 3.3.24</p>
             <p>PL CM - 4.4.24</p>
         </div>
