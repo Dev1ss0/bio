@@ -80,31 +80,19 @@
         .container {
             display: flex;
             align-items: flex-start;
-            width: 220%; /* Full width by default */
+            width: 100%; /* Full width by default */
             max-width: 800px; /* Set a maximum width */
             margin: 20px auto; /* Center horizontally and add some vertical margin */
             position: relative; /* Position relative to body */
             top: 10%; /* Move up closer to the top */
             transform: translateY(0%); /* Remove vertical centering */
             box-sizing: border-box; /* Include padding and border in the element's total width and height */
-            background-color: #161b22; /* Darker background color for the container */
-            padding: 10px; /* Add some padding */
-        }
-
-        .left {
-            flex: 1;
-            font-size: 1.2em; /* Smaller font size */
-            text-align: left;
-            border: 1px solid #30363d; /* Thin box around the "About me" section */
-            padding: 10px;
-            border-radius: 6px;
-            color: #a0aab3; /* Slightly darker and less bright text color */
-            background-color: #0d1117; /* Darker background for the "About me" section */
-            box-sizing: border-box; /* Include padding and border in the element's total width */
+            background-color: #0d1117; /* Darker background color for the container */
+            padding: 20px; /* Increase padding for better spacing */
         }
 
         .right {
-            flex: 2;
+            flex: 1;
             text-align: center;
         }
 
@@ -135,7 +123,7 @@
     </div>
     <h1>Welcome to my Bio!</h1>
     <div class="container">
-        <div class="left">
+        <div class="right">
             <p>About me:</p>
             <ul>
                 <li>Age: 18</li>
@@ -143,7 +131,6 @@
                 <li>Discord: Dev1ss0</li>
             </ul>
         </div>
-        <div class="right"></div>
     </div>
 </body>
 </html>
