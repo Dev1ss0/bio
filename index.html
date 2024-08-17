@@ -100,9 +100,8 @@
             color: #a0aab3; /* Slightly darker text color for contrast */
             width: 48%; /* Each box takes up less space */
             box-sizing: border-box; /* Include padding in the width */
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
+            display: grid;
+            grid-template-rows: repeat(3, auto); /* Align the rows */
         }
 
         .about-box p, .right-box p {
@@ -123,11 +122,11 @@
             font-weight: bold; /* Make list items bold */
         }
 
-        .right-box p {
-            font-size: 1.1em; /* Slightly larger font size */
-            font-weight: bold; /* Make it bold */
-            margin: 5px 0; /* Space between each item */
-            text-align: left; /* Align text to the left */
+        .right-box .row {
+            display: flex;
+            align-items: center;
+            font-size: 1.1em;
+            font-weight: bold;
         }
     </style>
 </head>
@@ -156,8 +155,8 @@
             </ul>
         </div>
         <div class="right-box">
-            <p>HC S5 - 3.3.24</p>
-            <p>PL CM - 4.4.24</p>
+            <div class="row"><p>HC S5 - 3.3.24</p></div>
+            <div class="row"><p>PL CM - 4.4.24</p></div>
         </div>
     </div>
 </body>
