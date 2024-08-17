@@ -55,6 +55,9 @@
             align-items: center;
             justify-content: center;
         }
+        .social-buttons a.youtube-button {
+            margin-left: 1em; /* Same space as Instagram button */
+        }
         .social-buttons a:hover {
             background-color: #30363d;
         }
@@ -70,7 +73,9 @@
             width: 80%; /* Reverted to previous size */
             max-width: 800px; /* Set a maximum width */
             margin-top: 20px;
+            margin-left: 0; /* Align to the left */
             justify-content: flex-start; /* Align to the left */
+            position: relative; /* Ensure it stays in place */
         }
         .left {
             flex: 1;
@@ -100,7 +105,7 @@
             <input type="text" placeholder="Search...">
         </div>
         <div class="social-buttons">
-            <a href="https://www.youtube.com/c/Dev1ss0" target="_blank" title="Visit Dev1ss0's YouTube Channel">
+            <a href="https://www.youtube.com/@Dev1ss0" target="_blank" title="Visit Dev1ss0's YouTube Channel" class="youtube-button">
                 <i class="fab fa-youtube"></i>
             </a>
             <a href="https://instagram.com" target="_blank" title="Visit Instagram Profile">
