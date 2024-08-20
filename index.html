@@ -6,190 +6,35 @@
     <title>Dev1ss0's Bio</title>
     <style>
         @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css');
-
-        body {
-            background-color: #0d1117; /* GitHub's dark gray background color */
-            color: #c9d1d9; /* GitHub's light gray text color */
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            height: 100vh;
-            position: relative; /* Ensure that absolutely positioned children are relative to the body */
-        }
-
-        .search-bar-container {
-            width: 70%;
-            margin-top: 0.5em; /* Reduce margin to move up closer */
-            margin-bottom: 1em;
-            display: flex;
-            align-items: center;
-            justify-content: flex-start;
-        }
-
-        .search-bar {
-            flex-grow: 1;
-        }
-
-        .search-bar input {
-            width: 100%;
-            padding: 10px;
-            font-size: 1em;
-            border: 1px solid #30363d;
-            border-radius: 6px;
-            background-color: #161b22;
-            color: #c9d1d9;
-        }
-
-        .social-buttons {
-            display: flex;
-            gap: 0.5em;
-            margin-left: 1em; /* Space between search bar and buttons */
-        }
-
-        .social-buttons a {
-            text-decoration: none;
-            font-size: 1.5em;
-            color: #c9d1d9;
-            background-color: #161b22;
-            border: 1px solid #30363d;
-            padding: 8px;
-            border-radius: 6px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .social-buttons a.youtube-button {
-            margin-left: 1em; /* Same space as Instagram button */
-        }
-
-        .social-buttons a:hover {
-            background-color: #30363d;
-        }
-
-        h1 {
-            font-size: 3em;
-            margin: 0.5em 0;
-            text-align: center;
-            width: 100%;
-        }
-
-        .profile-image {
-            width: 150px; /* Adjust size as needed */
-            height: 150px; /* Ensure it’s square */
-            border-radius: 75px; /* Make it circular */
-            border: 3px solid #30363d; /* Border color to match theme */
-            margin: 1em 0; /* Margin to separate from text above and below */
-            display: block; /* Ensures it behaves as a block element */
-        }
-
-        .container {
-            display: flex;
-            justify-content: space-between; /* Space between left and right sections */
-            align-items: stretch; /* Ensure both boxes stretch to the same height */
-            width: 100%; /* Full width by default */
-            max-width: 800px; /* Set a maximum width */
-            margin: 20px auto; /* Center horizontally and add some vertical margin */
-            position: relative; /* Position relative to body */
-            top: 10%; /* Move up closer to the top */
-            transform: translateY(0%); /* Remove vertical centering */
-            box-sizing: border-box; /* Include padding and border in the element's total width and height */
-            background-color: #0d1117; /* Darker background color for the container */
-            padding: 20px; /* Increase padding for better spacing */
-        }
-
-        .about-box, .right-box {
-            background-color: #161b22; /* Darker background for the sections */
-            border-radius: 10px; /* Rounded corners */
-            padding: 15px; /* Padding inside the box */
-            border: 1px solid #30363d; /* Border to match the theme */
-            color: #a0aab3; /* Slightly darker text color for contrast */
-            width: 48%; /* Each box takes up less space */
-            box-sizing: border-box; /* Include padding in the width */
-            display: grid;
-            grid-template-rows: repeat(3, auto); /* Align the rows */
-        }
-
-        .about-box p, .right-box p {
-            font-size: 1.2em; /* Slightly larger font size */
-            font-weight: bold; /* Make it bold */
-            margin-bottom: 10px; /* Add space below the "About me" title */
-            text-align: left; /* Ensure text aligns to the left */
-        }
-
-        .about-box ul {
-            list-style-type: none;
-            padding-left: 0;
-            font-size: 1.1em; /* Slightly larger font size */
-        }
-
-        .about-box li {
-            margin-bottom: 0.5em;
-            font-weight: bold; /* Make list items bold */
-        }
-
-        .right-box .row {
-            display: flex;
-            align-items: center;
-            font-size: 1.1em;
-            font-weight: bold;
-            margin-bottom: 10px; /* Space between rows */
-        }
-
-        .bottom-image {
-            width: 150px; /* Adjust size as needed */
-            height: 150px; /* Ensure it’s square */
-            border: 3px solid #30363d; /* Border color to match theme */
-            margin: 2em 0; /* Margin to separate from boxes */
-            display: block; /* Ensures it behaves as a block element */
-            border-radius: 10px; /* Rounded corners for the image */
-        }
-
-        .custom-button {
-            background-color: #161b22; /* Match the background color of the boxes */
-            color: #c9d1d9; /* Text color */
-            border: 1px solid #30363d; /* Border to match the theme */
-            border-radius: 10px; /* Rounded corners */
-            padding: 10px 20px; /* Padding for the button */
-            font-size: 1.2em; /* Slightly larger font size */
-            text-align: center;
-            width: 100%; /* Make the button as wide as the container */
-            max-width: 800px; /* Max width same as the container */
-            margin: 20px auto 0; /* Center horizontally and add some vertical margin, with no margin below */
-            cursor: pointer; /* Pointer cursor on hover */
-            text-decoration: none; /* Remove underline from text */
-            display: block; /* Make the button behave like a block-level element */
-        }
-
-        .custom-button:hover {
-            background-color: #30363d; /* Darker background on hover */
-        }
-
+        body { background-color: #0d1117; color: #c9d1d9; font-family: Arial, sans-serif; margin: 0; padding: 0; display: flex; flex-direction: column; align-items: center; height: 100vh; position: relative; }
+        .search-bar-container { width: 70%; margin-top: 0.5em; margin-bottom: 1em; display: flex; align-items: center; justify-content: flex-start; }
+        .search-bar { flex-grow: 1; }
+        .search-bar input { width: 100%; padding: 10px; font-size: 1em; border: 1px solid #30363d; border-radius: 6px; background-color: #161b22; color: #c9d1d9; }
+        .social-buttons { display: flex; gap: 0.5em; margin-left: 1em; }
+        .social-buttons a { text-decoration: none; font-size: 1.5em; color: #c9d1d9; background-color: #161b22; border: 1px solid #30363d; padding: 8px; border-radius: 6px; display: flex; align-items: center; justify-content: center; }
+        .social-buttons a:hover { background-color: #30363d; }
+        h1 { font-size: 3em; margin: 0.5em 0; text-align: center; width: 100%; }
+        .bottom-image { width: 150px; height: 150px; border-radius: 10px; border: 3px solid #30363d; margin: 2em 0; display: block; }
+        .container { display: flex; justify-content: space-between; align-items: stretch; width: 100%; max-width: 800px; margin: 20px auto; position: relative; top: 10%; background-color: #0d1117; padding: 20px; box-sizing: border-box; }
+        .about-box, .right-box { background-color: #161b22; border-radius: 10px; padding: 15px; border: 1px solid #30363d; color: #a0aab3; width: 48%; box-sizing: border-box; display: grid; grid-template-rows: repeat(3, auto); }
+        .about-box p, .right-box p { font-size: 1.2em; font-weight: bold; margin-bottom: 10px; text-align: left; }
+        .about-box ul { list-style-type: none; padding-left: 0; font-size: 1.1em; }
+        .about-box li { margin-bottom: 0.5em; font-weight: bold; }
+        .right-box .row { display: flex; align-items: center; font-size: 1.1em; font-weight: bold; margin-bottom: 10px; }
+        .custom-button { background-color: #161b22; color: #c9d1d9; border: 1px solid #30363d; border-radius: 10px; padding: 10px 20px; font-size: 1.2em; text-align: center; width: 100%; max-width: 800px; margin: 40px auto 0; cursor: pointer; text-decoration: none; display: block; }
+        .custom-button:hover { background-color: #30363d; }
     </style>
 </head>
 <body>
     <div class="search-bar-container">
-        <div class="search-bar">
-            <input type="text" placeholder="Search...">
-        </div>
+        <div class="search-bar"><input type="text" placeholder="Search..."></div>
         <div class="social-buttons">
-            <a href="https://www.youtube.com/@Dev1ss0" target="_blank" title="Visit Dev1ss0's YouTube Channel" class="youtube-button">
-                <i class="fab fa-youtube"></i>
-            </a>
-            <a href="https://www.instagram.com/dev1ss0/" target="_blank" title="Visit Instagram Profile">
-                <i class="fab fa-instagram"></i>
-            </a>
+            <a href="https://www.youtube.com/@Dev1ss0" target="_blank" title="Visit Dev1ss0's YouTube Channel"><i class="fab fa-youtube"></i></a>
+            <a href="https://www.instagram.com/dev1ss0/" target="_blank" title="Visit Instagram Profile"><i class="fab fa-instagram"></i></a>
         </div>
     </div>
     <h1>Welcome to my Bio!</h1>
-
-     <!-- Bottom Image -->
     <img src="https://cdn.discordapp.com/avatars/965509239567159336/fe600175c4a642a9d4a00b86760cb989.png?size=1024" alt="Bottom Image" class="bottom-image" />
-
-    <!-- Custom Button Below the Boxes -->
     <a href="https://imgur.com/user/realDev1ss0/posts" target="_blank" class="custom-button">Look at my builds!</a>
     <div class="container">
         <div class="about-box">
@@ -205,8 +50,5 @@
             <div class="row"><p>PL CM - 4.4.24</p></div>
         </div>
     </div>
-
-    
-
 </body>
 </html>
