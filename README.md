@@ -1,2 +1,2 @@
-### boredom hosted discord pages bio 
-why? coz why not
+### Dev1ss0's personal Website.
+
