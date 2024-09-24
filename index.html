@@ -21,25 +21,33 @@
         .about-box ul, .right-box ul { list-style-type: none; padding-left: 0; font-size: 1.1em; }
         .about-box li, .right-box li { margin-bottom: 0.5em; font-weight: bold; }
         .custom-button { background-color: #161b22; color: #c9d1d9; border: 1px solid #30363d; border-radius: 10px; padding: 10px 20px; font-size: 1.2em; text-align: center; width: 80%; max-width: 600px; margin: 50px auto 0; text-decoration: none; }
-        
-        .long-button {
+
+        .split-button {
+            display: flex;
+            width: 100%;
+            max-width: 800px;
+            margin: 20px 0;
+            border-radius: 10px;
+            overflow: hidden; /* Ensures corners remain rounded */
+        }
+
+        .split-button a {
+            flex: 1; /* Equal width for both buttons */
             background-color: #161b22;
             color: #c9d1d9;
             border: 1px solid #30363d;
-            border-radius: 10px;
-            padding: 10px 20px;
+            padding: 10px 0;
             font-size: 1.2em;
             text-align: center;
-            width: 100%; /* Full width */
-            max-width: 800px; /* Matches the width of the container */
-            margin: 20px 0; /* Space below the profile picture */
             text-decoration: none;
-            display: block;
-            text-align: center;
         }
 
-        .long-button:hover {
+        .left-button:hover, .right-button:hover {
             background-color: #50575e;
+        }
+
+        .left-button {
+            border-right: 1px solid #30363d; /* Divider between the two buttons */
         }
 
     </style>
@@ -54,7 +62,10 @@
     </div>
     <h1>Welcome to my Bio!</h1>
     <img src="https://cdn.discordapp.com/avatars/965509239567159336/fe600175c4a642a9d4a00b86760cb989.png" alt="Bottom Image" class="bottom-image" />
-    <a href="#" class="long-button">Click me!</a> <!-- New button here -->
+    <div class="split-button">
+        <a href="https://discord.gg/pojavlauncher-724163890803638273" class="left-button" target="_blank">Pojavlauncher Discord server</a>
+        <a href="https://discord.gg/4ZmhHyyP6W" class="right-button" target="_blank">Friend's Discord server</a>
+    </div>
     <div class="container">
         <div class="about-box">
             <p>About me:</p>
