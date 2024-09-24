@@ -6,7 +6,7 @@
     <title>Dev1ss0's Bio</title>
     <style>
         @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css');
-        body { background-color: #0d1117; color: #c9d1d9; font-family: Arial, sans-serif; margin: 0; padding: 0; display: flex; flex-direction: column; align-items: center; height: 100vh; }
+        body { background-color: #0d1117; color: #c9d1d9; font-family: Arial, sans-serif; margin: 0; padding: 0; display: flex; flex-direction: column; align-items: center; min-height: 100vh; }
         .search-bar-container { width: 65%; margin-top: 0.5em; margin-bottom: 1em; display: flex; align-items: center; justify-content: flex-start; }
         .search-bar { flex-grow: 1; }
         .search-bar input { width: 100%; padding: 8px; font-size: 0.95em; border: 1px solid #30363d; border-radius: 6px; background-color: #161b22; color: #c9d1d9; }
@@ -22,24 +22,25 @@
         .about-box li, .right-box li { margin-bottom: 0.5em; font-weight: bold; }
         .custom-button { background-color: #161b22; color: #c9d1d9; border: 1px solid #30363d; border-radius: 10px; padding: 10px 20px; font-size: 1.2em; text-align: center; width: 80%; max-width: 600px; margin: 50px auto 0; text-decoration: none; }
 
+        /* Split button container */
         .split-button {
             display: flex;
             width: 100%;
             max-width: 800px;
             margin: 20px 0;
             border-radius: 10px;
-            overflow: hidden; /* Ensures corners remain rounded */
         }
 
         .split-button a {
-            flex: 1; /* Equal width for both buttons */
+            flex: 1; /* Make the buttons share equal space */
             background-color: #161b22;
             color: #c9d1d9;
             border: 1px solid #30363d;
-            padding: 10px 0;
+            padding: 10px;
             font-size: 1.2em;
             text-align: center;
             text-decoration: none;
+            display: block; /* Ensure the button takes full width */
         }
 
         .left-button:hover, .right-button:hover {
@@ -49,7 +50,6 @@
         .left-button {
             border-right: 1px solid #30363d; /* Divider between the two buttons */
         }
-
     </style>
 </head>
 <body>
@@ -62,10 +62,13 @@
     </div>
     <h1>Welcome to my Bio!</h1>
     <img src="https://cdn.discordapp.com/avatars/965509239567159336/fe600175c4a642a9d4a00b86760cb989.png" alt="Bottom Image" class="bottom-image" />
+    
+    <!-- Split button section -->
     <div class="split-button">
         <a href="https://discord.gg/pojavlauncher-724163890803638273" class="left-button" target="_blank">Pojavlauncher Discord server</a>
         <a href="https://discord.gg/4ZmhHyyP6W" class="right-button" target="_blank">Friend's Discord server</a>
     </div>
+    
     <div class="container">
         <div class="about-box">
             <p>About me:</p>
@@ -83,6 +86,7 @@
             </ul>
         </div>
     </div>
+    
     <a href="https://www.flickr.com/photos/201346365@N08/" target="_blank" class="custom-button">Look at my builds!</a>
 </body>
 </html>
