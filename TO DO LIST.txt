@@ -1,1 +1,4 @@
 * Things under End statement
+* more buttons
+* fix discord links, add discord inbuilt image system
+* re-center ADD-ONs
