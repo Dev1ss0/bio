@@ -1,4 +1,6 @@
 * Things under End statement
+* make more github pages and make one for hardcore builds. 
+* code viewer
 * more buttons
-* fix discord links, add discord inbuilt image system
-* re-center ADD-ONs
+
+
