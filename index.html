@@ -6,21 +6,144 @@
     <title>Dev1ss0's Bio</title>
     <style>
         @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css');
-        body { background-color: #0d1117; color: #c9d1d9; font-family: Arial, sans-serif; margin: 0; padding: 0; display: flex; flex-direction: column; align-items: center; min-height: 100vh; }
-        .search-bar-container { width: 65%; margin-top: 0.5em; margin-bottom: 1em; display: flex; align-items: center; justify-content: flex-start; }
-        .search-bar { flex-grow: 1; }
-        .search-bar input { width: 100%; padding: 8px; font-size: 0.95em; border: 1px solid #30363d; border-radius: 6px; background-color: #161b22; color: #c9d1d9; }
-        .social-buttons { display: flex; gap: 0.5em; margin-left: 1em; }
-        .social-buttons a { text-decoration: none; font-size: 1.5em; color: #c9d1d9; background-color: #30363d; border: 1px solid #30363d; padding: 8px; border-radius: 6px; display: flex; align-items: center; justify-content: center; }
-        .social-buttons a:hover { background-color: #50575e; }
-        h1 { font-size: 3em; margin: 0.5em 0; text-align: center; }
-        .bottom-image { width: 150px; height: 150px; border-radius: 10px; border: 3px solid #30363d; margin: 2em 0; }
-        .container { display: flex; justify-content: space-between; width: 100%; max-width: 800px; margin: 20px auto 0; padding: 20px; background-color: #0d1117; box-sizing: border-box; }
-        .about-box, .right-box { background-color: #161b22; border-radius: 10px; padding: 15px; border: 1px solid #30363d; color: #a0aab3; width: 48%; box-sizing: border-box; }
-        .about-box p, .right-box p { font-size: 1.2em; font-weight: bold; margin-bottom: 10px; }
-        .about-box ul, .right-box ul { list-style-type: none; padding-left: 0; font-size: 1.1em; }
-        .about-box li, .right-box li { margin-bottom: 0.5em; font-weight: bold; }
-        .custom-button { background-color: #161b22; color: #c9d1d9; border: 1px solid #30363d; border-radius: 10px; padding: 10px 20px; font-size: 1.2em; text-align: center; width: 80%; max-width: 600px; margin: 50px auto 0; text-decoration: none; }
+
+        body { 
+            background-color: #0d1117; 
+            color: #c9d1d9; 
+            font-family: Arial, sans-serif; 
+            margin: 0; 
+            padding: 0; 
+            display: flex; 
+            flex-direction: column; 
+            align-items: center; 
+            min-height: 100vh; 
+        }
+
+        .search-bar-container { 
+            width: 65%; 
+            margin-top: 0.5em; 
+            margin-bottom: 1em; 
+            display: flex; 
+            align-items: center; 
+            justify-content: flex-start; 
+        }
+
+        .github-box {
+            background-color: #30363d; /* Gray background for the GitHub box */
+            border-radius: 6px; /* Rounded corners */
+            padding: 8px; /* Padding around the icon */
+            margin-right: 10px; /* Space between the box and search bar */
+            display: flex; /* To center the icon */
+            align-items: center; /* Center vertically */
+        }
+
+        .github-icon {
+            font-size: 1.5em; /* Adjust size of the icon */
+            color: #c9d1d9; /* Icon color */
+        }
+
+        .search-bar { 
+            flex-grow: 1; 
+        }
+
+        .search-bar input { 
+            width: 98%; 
+            padding: 8px; 
+            font-size: 0.95em; 
+            border: 1px solid #30363d; 
+            border-radius: 6px; 
+            background-color: #161b22; 
+            color: #c9d1d9; 
+        }
+
+        .social-buttons { 
+            display: flex; 
+            gap: 0.5em; 
+            margin-left: 1.5em; 
+        }
+
+        .social-buttons a { 
+            text-decoration: none; 
+            font-size: 1.5em; 
+            color: #c9d1d9; 
+            background-color: #30363d; 
+            border: 1px solid #30363d; 
+            padding: 8px; 
+            border-radius: 6px; 
+            display: flex; 
+            align-items: center; 
+            justify-content: center; 
+        }
+
+        .social-buttons a:hover { 
+            background-color: #50575e; 
+        }
+
+        h1 { 
+            font-size: 3em; 
+            margin: 0.5em 0; 
+            text-align: center; 
+        }
+
+        .bottom-image { 
+            width: 150px; 
+            height: 150px; 
+            border-radius: 10px; 
+            border: 3px solid #30363d; 
+            margin: 2em 0; 
+        }
+
+        .container { 
+            display: flex; 
+            justify-content: space-between; 
+            width: 100%; 
+            max-width: 800px; 
+            margin: 20px auto 0; 
+            padding: 20px; 
+            background-color: #0d1117; 
+            box-sizing: border-box; 
+        }
+
+        .about-box, .right-box { 
+            background-color: #161b22; 
+            border-radius: 10px; 
+            padding: 15px; 
+            border: 1px solid #30363d; 
+            color: #a0aab3; 
+            width: 48%; 
+            box-sizing: border-box; 
+        }
+
+        .about-box p, .right-box p { 
+            font-size: 1.2em; 
+            font-weight: bold; 
+            margin-bottom: 10px; 
+        }
+
+        .about-box ul, .right-box ul { 
+            list-style-type: none; 
+            padding-left: 0; 
+            font-size: 1.1em; 
+        }
+
+        .about-box li, .right-box li { 
+            margin-bottom: 0.5em; 
+            font-weight: bold; 
+        }
+
+        .custom-button { 
+            background-color: #161b22; 
+            color: #c9d1d9; 
+            border: 1px solid #30363d; 
+            border-radius: 10px; 
+            padding: 10px 20px; 
+            font-size: 1.2em; 
+            text-align: center; 
+            width: 80%; 
+            max-width: 600px; 
+            margin: 50px auto 0; 
+            text-decoration: none; 
+        }
 
         /* Split button container */
         .split-button {
@@ -28,9 +151,8 @@
             width: 100%;
             max-width: 800px;
             margin: 20px 0;
-            /* Rounded corners for the entire button container */
             border-radius: 10px;
-            overflow: hidden; /* Ensures rounded corners remain visible */
+            overflow: hidden;
         }
 
         .split-button a {
@@ -46,13 +168,11 @@
         }
 
         .left-button {
-            /* Only round the top-left and bottom-left corners for the left button */
             border-radius: 10px 0 0 10px;
             border-right: 1px solid #30363d;
         }
 
         .right-button {
-            /* Only round the top-right and bottom-right corners for the right button */
             border-radius: 0 10px 10px 0;
         }
 
@@ -63,10 +183,21 @@
 </head>
 <body>
     <div class="search-bar-container">
-        <div class="search-bar"><input type="text" placeholder="Search..."></div>
+        <div class="github-box">
+            <a href="https://github.com/Dev1ss0" target="_blank" title="GitHub">
+                <i class="fab fa-github github-icon"></i>
+            </a>
+        </div>
+        <div class="search-bar">
+            <input type="text" placeholder="Search...">
+        </div>
         <div class="social-buttons">
-            <a href="https://www.youtube.com/@Dev1ss0" target="_blank" title="YouTube"><i class="fab fa-youtube"></i></a>
-            <a href="https://www.instagram.com/dev1ss0/" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.youtube.com/@Dev1ss0" target="_blank" title="YouTube">
+                <i class="fab fa-youtube"></i>
+            </a>
+            <a href="https://www.instagram.com/dev1ss0/" target="_blank" title="Instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
         </div>
     </div>
     <h1>Welcome to my Bio!</h1>
@@ -90,8 +221,9 @@
         <div class="right-box">
             <p>HC Worlds:</p>
             <ul>
-                <li>HC S5: 3.3.24</li>
-                <li>PL CM: 4.4.24</li>
+                <li>Season 5: 3.3.24</li>
+                <li>Season 4: 31.10.21</li>
+                <li>Season 4 death: 29.02.24</li>
             </ul>
         </div>
     </div>
