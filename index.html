@@ -3,11 +3,183 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dev1ss0's Website</title>
+    <title>Dev1ss0's Bio</title>
+    <style>
+        @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css');
 
-    <link rel="stylesheet" href="assets/style.css">
-    <link rel="icon" href="/assets/img/dev1ss0.webp">
+        body { 
+            background-color: #0d1117; 
+            color: #c9d1d9; 
+            font-family: Arial, sans-serif; 
+            margin: 0; 
+            padding: 0; 
+            display: flex; 
+            flex-direction: column; 
+            align-items: center; 
+            min-height: 100vh; 
+        }
 
+        .search-bar-container { 
+            width: 65%; 
+            margin-top: 0.5em; 
+            margin-bottom: 1em; 
+            display: flex; 
+            align-items: center; 
+            justify-content: flex-start; 
+        }
+
+        .github-box {
+            background-color: #30363d;
+            border-radius: 6px;
+            padding: 8px;
+            margin-right: 10px;
+            display: flex;
+            align-items: center;
+        }
+
+        .github-icon {
+            font-size: 1.5em;
+            color: #c9d1d9;
+        }
+
+        .search-bar { 
+            flex-grow: 1; 
+        }
+
+        .search-bar input { 
+            width: 98%; 
+            padding: 8px; 
+            font-size: 0.95em; 
+            border: 1px solid #30363d; 
+            border-radius: 6px; 
+            background-color: #161b22; 
+            color: #c9d1d9; 
+        }
+
+        .social-buttons { 
+            display: flex; 
+            gap: 0.5em; 
+            margin-left: 1.5em; 
+        }
+
+        .social-buttons a { 
+            text-decoration: none; 
+            font-size: 1.5em; 
+            color: #c9d1d9; 
+            background-color: #30363d; 
+            border: 1px solid #30363d; 
+            padding: 8px; 
+            border-radius: 6px; 
+            display: flex; 
+            align-items: center; 
+            justify-content: center; 
+        }
+
+        .social-buttons a:hover { 
+            background-color: #50575e; 
+        }
+
+        h1 { 
+            font-size: 4em; 
+            margin: 0.5em 0; 
+            text-align: center; 
+        }
+
+        .bottom-image { 
+            width: 150px; 
+            height: 150px; 
+            border-radius: 10px; 
+            border: 3px solid #30363d; 
+            margin: 2em 0; 
+        }
+
+        .container { 
+            display: flex; 
+            justify-content: space-between; 
+            width: 101%; 
+            max-width: 800px; 
+            margin: 5px auto 0; 
+            padding: 20px; 
+            background-color: #0d1117; 
+            box-sizing: border-box; 
+        }
+
+        .about-box, .right-box { 
+            background-color: #161b22; 
+            border-radius: 10px; 
+            padding: 15px; 
+            border: 1px solid #30363d; 
+            color: #a0aab3; 
+            width: 48%; 
+            box-sizing: border-box; 
+        }
+
+        .about-box p, .right-box p { 
+            font-size: 1.2em; 
+            font-weight: bold; 
+            margin-bottom: 10px; 
+        }
+
+        .about-box ul, .right-box ul { 
+            list-style-type: none; 
+            padding-left: 0; 
+            font-size: 1.1em; 
+        }
+
+        .about-box li, .right-box li { 
+            margin-bottom: 0.5em; 
+            font-weight: bold; 
+        }
+
+        .custom-button { 
+            background-color: #161b22; 
+            color: #c9d1d9; 
+            border: 1px solid #30363d; 
+            border-radius: 10px; 
+            padding: 10px 20px; 
+            font-size: 1.2em; 
+            text-align: center; 
+            width: 80%; 
+            max-width: 600px; 
+            margin: px auto 0; 
+            text-decoration: none; 
+        }
+
+        
+        .split-button {
+            display: flex;
+            width: 100%;
+            max-width: 800px;
+            margin: 20px 0;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .split-button a {
+            flex: 1;
+            background-color: #161b22;
+            color: #c9d1d9;
+            border: 1px solid #30363d;
+            padding: 11px;
+            font-size: 1.2em;
+            text-align: center;
+            text-decoration: none;
+            display: block;
+        }
+
+        .left-button {
+            border-radius: 10px 0 0 10px;
+            border-right: 1px solid #30363d;
+        }
+
+        .right-button {
+            border-radius: 0 10px 10px 0;
+        }
+
+        .left-button:hover, .right-button:hover {
+            background-color: #50575e;
+        }
+    </style>
 </head>
 <body>
     <div class="search-bar-container">
@@ -29,7 +201,7 @@
         </div>
     </div>
     <h1>Welcome to my Bio!</h1>
-    <img src="assets/img/dev1ss0.webp" alt="Bottom Image" class="bottom-image" />
+    <img src="https://github.com/Dev1ss0/bio/blob/main/Images/fe600175c4a642a9d4a00b86760cb989.png?raw=true" alt="Bottom Image" class="bottom-image" />
     
     <!-- Split button section with rounded corners -->
     <div class="split-button">
@@ -56,6 +228,6 @@
         </div>
     </div>
     
-    <a href="/builds.html" target="_blank" class="custom-button">Look at my builds!</a>
+    <a href="https://dev1ss0.github.io/ImageWebsite/" target="_blank" class="custom-button">Look at my builds!</a>
 </body>
 </html>
